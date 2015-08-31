@@ -1,5 +1,5 @@
 if !exists("g:go_cyclo_bin")
-    let g:go_errcheck_bin = "gocyclo"
+    let g:go_cyclo_bin = "gocyclo"
 endif
 
 function! go#cyclo#Run(...) abort
