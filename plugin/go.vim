@@ -16,6 +16,7 @@ let s:packages = [
             \ "github.com/golang/lint/golint",
             \ "github.com/kisielk/errcheck",
             \ "github.com/jstemmer/gotags",
+            \ "github.com/fzipp/gocyclo",
             \ ]
 
 " These commands are available on any filetypes
@@ -68,7 +69,7 @@ function! s:GoInstallBinaries(updateBinaries)
 
     " https://github.com/golang/go/issues/10791
     if s:go_version > "1.4.0" && s:go_version < "1.5.0"
-        let cmd .= "-f " 
+        let cmd .= "-f "
     endif
 
     for pkg in s:packages

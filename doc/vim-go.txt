@@ -308,6 +308,14 @@ COMMANDS                                                          *go-commands*
     You may optionally pass any valid errcheck flags/options. For a full list
     please see `errcheck -h`.
 
+                                                                   *:GoCyclo*
+:GoCyclo [options]
+    Check the cyclocomplexty of you application. Info is populated in
+    quickfix window.
+
+    You may optionally pass any valid gocyclo flags/options. For a full list
+    please see `gocyclo -h`.
+
                                                                    *:GoFiles*
 :GoFiles
 

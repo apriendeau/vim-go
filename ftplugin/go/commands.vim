@@ -108,5 +108,6 @@ command! -nargs=* GoLint call go#lint#Run(<f-args>)
 
 " -- errcheck
 command! -nargs=* -complete=customlist,go#package#Complete GoErrCheck call go#errcheck#Run(<f-args>)
-
+" -- gocyclo
+command! -nargs=* -complete=customlist,go#package#Complete GoCyclo call go#cyclo#Run(<f-args>)
 " vim:ts=4:sw=4:et
